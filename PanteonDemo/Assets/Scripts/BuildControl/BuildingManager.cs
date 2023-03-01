@@ -9,6 +9,8 @@ public class BuildingManager : MonoBehaviour
     public CustomCursor customCursor;
     public static GameObject _currentBuild;
 
+    [SerializeField] Testing _testing;
+
     /// <summary>
     /// Seçilen build (barrack veya power) harita üzerinde mouse pozisyonunda gride göre yaratýlr.
     /// </summary>
@@ -34,6 +36,7 @@ public class BuildingManager : MonoBehaviour
                 buildPosition.z = 0;
 
                 Instantiate(currentBuild, buildPosition, Quaternion.identity).gameObject.transform.localScale *= 12;
+                _testing.denem();
             }
             else if(currentBuild.name == "Power")
             {
@@ -42,6 +45,7 @@ public class BuildingManager : MonoBehaviour
                 buildPosition.z = 0;
 
                 Instantiate(currentBuild, buildPosition, Quaternion.identity).gameObject.transform.localScale *= 7;
+                _testing.denem();
             }
                 
 
