@@ -36,7 +36,7 @@ public class BuildingManager : MonoBehaviour
                 buildPosition.z = 0;
 
                 Instantiate(currentBuild, buildPosition, Quaternion.identity).gameObject.transform.localScale *= 12;
-                _testing.denem();
+                _testing.GridChoose();
             }
             else if(currentBuild.name == "Power")
             {
@@ -45,7 +45,7 @@ public class BuildingManager : MonoBehaviour
                 buildPosition.z = 0;
 
                 Instantiate(currentBuild, buildPosition, Quaternion.identity).gameObject.transform.localScale *= 7;
-                _testing.denem();
+                _testing.GridChoose();
             }
                 
 

@@ -45,7 +45,7 @@ public class Testing : MonoBehaviour {
         
     }
 
-    public void denem()
+    public void GridChoose()
     {
         if (Input.GetMouseButtonDown(0))
         {
